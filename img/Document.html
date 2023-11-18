@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/style.css">
+  </head>
+  <body cz-shortcut-listen="true">
+    <header>
+      <h1 id="logo">
+        <a href="http://127.0.0.1:5500/index.html">PANDORA <span>CAR</span></a>
+      </h1>
+
+      <nav>
+        <a href="http://127.0.0.1:5500/">Hoşgeldin</a>
+        <a href="http://127.0.0.1:5500/">Tanıtım</a>
+        <a href="http://127.0.0.1:5500/">Adımlar</a>
+        <a href="http://127.0.0.1:5500/" class="link">Anasayfa</a>
+        <a href="http://127.0.0.1:5500/projects.html" class="link">Projeler</a>
+        <a href="http://127.0.0.1:5500/teams.html" class="link">Takım</a>
+      </nav>
+
+      <button class="nav-button">|||</button>
+    </header>
+
+    <!-- header bitiş -->
+
+    <!-- hero start -->
+
+    <div id="hero">
+      <div class="hero-inner">
+        <h1>Car Services</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea magni
+          molestiae blanditiis praesentium quia ex officia mollitia magnam aut
+          autem totam labore quae iure minima, eligendi tempora adipisci vitae
+          voluptate?
+        </p>
+        <div class="buttons">
+          <button>Info</button>
+          <button>Service Appointment</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero end -->
+
+    <!-- main area -->
+
+    <main>
+      <section class="img-section">
+        <div class="img-section-info">
+          <h1></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            voluptatem ex minima esse excepturi incidunt ad, ab pariatur et
+            consectetur nihil distinctio eius quas asperiores mollitia
+            repudiandae hic dolore dolorum!
+          </p>
+          <button>Join us
+
+          </button>
+        </div>
+
+        <div class="images
+        "></div>
+      </section>
+    </main>
+
+    <!-- footer start -->
+
+    <footer>
+      <div class="footer-area">
+        <div class="footer-links">
+          <h2>Şirket</h2>
+          <a href="http://127.0.0.1:5500/">Projeler</a>
+          <a href="http://127.0.0.1:5500/">Takım</a>
+          <a href="http://127.0.0.1:5500/">Adımlar</a>
+          <a href="http://127.0.0.1:5500/">Neden Biz</a>
+        </div>
+        <div class="footer-links">
+          <h2>Kaynaklar</h2>
+          <a href="http://127.0.0.1:5500/">Sözleşmeler</a>
+          <a href="http://127.0.0.1:5500/">Gizlilik</a>
+          <a href="http://127.0.0.1:5500/">Blog</a>
+          <a href="http://127.0.0.1:5500/">Destek</a>
+        </div>
+        <div class="footer-links">
+          <h2>Ürün</h2>
+          <a href="http://127.0.0.1:5500/">Proje Yönetimi</a>
+          <a href="http://127.0.0.1:5500/">Ürün Yönetimi</a>
+          <a href="http://127.0.0.1:5500/">Zamanlama</a>
+          <a href="http://127.0.0.1:5500/">Neden Biz</a>
+        </div>
+        <div class="footer-links">
+          <h2>Pandora</h2>
+          <p>Haber Bültenine Abone Ol</p>
+          <div class="field">
+            <input type="email" placeholder="E-mail">
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-buttom">Copyright © 2023</p>
+    </footer>
+
+    <!-- footer end -->
+
+    <script src="./Document_files/main.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
