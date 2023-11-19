@@ -136,9 +136,9 @@ nav {
 /* section image start */
 
 #img-section{
-  display: flex;
+  display: grid;
   gap: 15px;
-  justify-content: space-around;
+  grid-template-columns: repeat(2,1fr)
 }
 
 
@@ -161,6 +161,7 @@ nav {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;
+  width: 50%;
 
  
 }
@@ -181,6 +182,116 @@ nav {
 .window:nth-child(2){
   border-radius: 40px;
 }
+
+/* service section start */
+
+.service-header-sec{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-bottom: 50px;
+  
+}
+
+
+.service-header-sec p{
+ 
+}
+
+.service-header-sec button{
+  text-wrap: nowrap;
+
+  
+}
+
+
+.service-card-sec{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.service-card{
+  border: .7px solid var(--gray);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.service-card p{
+  text-align: justify;
+  word-spacing: 1px;
+}
+
+
+/* service section end */
+
+
+
+/* step section start */
+
+.step-sec-info{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+  border-bottom: 3px solid gray;
+  padding-bottom: 20px;
+
+  
+}
+
+
+.step-sec-info p{
+  max-width: 400px;
+  max-height: 100px;
+}
+
+.step-sec-info h1{
+  max-width: 400px;
+}
+
+#step-sec ul{
+  display: grid;
+  gap: 20px;
+}
+
+#step-sec ul li{
+  display: flex;
+  justify-content: space-between;
+ 
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+  align-items: center;
+  
+
+}
+#step-sec ul li h1 span{
+  color: gray;
+  font-size: 15px;
+}
+
+#step-sec ul li img{
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  color: var(--white);
+  background-color: var(--yellow);
+  object-fit: contain;
+  padding: 5px;
+}
+
+.step-list{
+  margin-top: 50px;
+}
+
+/* step section end */
 
 
 
@@ -223,6 +334,10 @@ footer {
 .field button {
   background-color: var(--yellow);
   white-space: nowrap;
+}
+
+.footer-links span{
+  color: var(--yellow);
 }
 
 /* footer end */
@@ -297,5 +412,177 @@ footer {
     max-width: 80px;
   }
 
+  .service-card-sec{
+    grid-template-columns: 1fr;
+    text-align: center;
+    max-width: 50%;
+    justify-content: center;
+    
+    margin: 0 auto;
+    gap: 80px;
+  }
+
+  .window{
+    width: 30%;
+  }
+
+
+
 }
 
+
+@media (max-width: 560px) {
+  .service-header-sec{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-header-sec button{
+    max-width: fit-content;
+  }
+
+}
+
+
+
+
+@media (max-width: 1190px) {
+  #img-section{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(1,1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images{
+    width: 60%;
+  }
+
+  .window{
+    width: 50%;
+  }
+
+  @media (max-width: 884px) {
+    .nav-button {
+      display: block;
+    }
+  
+    nav {
+      display: none;
+    }
+  }
+  
+  
+  @media (max-width: 773px) {
+    .nav-button {
+      display: block;
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    .toggle {
+      display: flex;
+      position: fixed;
+      right: 0;
+      flex-direction: column;
+      top: 70px;
+      background-color: var(--gray);
+      padding: 20px;
+      border-radius: 10px;
+      color: var(--black);
+      z-index: 10000;
+    }
+  
+    #hero{
+      
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .hero-inner{
+      backdrop-filter: blur(20px);
+    }
+  
+    #img-section{
+      flex-direction: column;
+      gap: 70px;
+      align-items: center;
+    }
+  
+  }
+  
+  
+  
+  @media (max-width: 1000px) {
+    .footer-area {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 50px;
+      column-gap: 50px;
+    }
+  
+    .footer-links {
+      align-items: center;
+    }
+  
+    .field input {
+      max-width: 80px;
+    }
+  
+    .service-card-sec{
+      grid-template-columns: 1fr;
+      text-align: center;
+      max-width: 50%;
+      justify-content: center;
+      
+      margin: 0 auto;
+      gap: 80px;
+    }
+  
+    .window{
+      width: 30%;
+    }
+  
+  
+  
+  }
+  
+  
+  @media (max-width: 560px) {
+    .service-header-sec{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-header-sec button{
+      max-width: fit-content;
+    }
+  
+  }
+  
+  
+  
+  
+  @media (max-width: 1190px) {
+    #img-section{
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(1,1fr);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .images{
+      width: 60%;
+    }
+  
+    .window{
+      width: 50%;
+    }
+  
+  }
+}

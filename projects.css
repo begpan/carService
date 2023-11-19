@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #f5f5f5;
+  --black: #121212;
+  --yellow: #e6c400;
+  --yellow2: #e6c40090;
+  --gray: #cdcccc;
+}
+/* genel etiket stillendirmeleri */
+
+body {
+  font-family: "Electrolize", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+p {
+  color: var(--gray);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--white);
+
+  font-family: "Poppins", sans-serif;
+}
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+section {
+  padding: 50px;
+}
+
+.welcome {
+  padding: 100px;
+  font-size: 3vmin;
+
+  background-image: linear-gradient(216deg, #fad961 39%, #f76b1c 72%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.what-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.what-info {
+  max-width: 400px;
+}
+
+.what-info h1 {
+  margin-bottom: 30px;
+}
+
+.what-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.what-card {
+  background-color: rgb(47, 47, 47);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  gap: 30px;
+  position: relative;
+}
+
+.what-card img {
+  width: 70px;
+  position: absolute;
+  top: -50px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  padding: 10px;
+}
+
+/* tyre start */
+
+.tyres{
+  margin-top: 40px;
+}
+
+.tyre-info {
+  display: grid;
+  gap: 20px;
+}
+
+.tyre-img {
+  background-color: rgb(47, 47, 47);
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  max-height: 30%;
+}
+
+.tyre-img .arrow {
+  width: 5%;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+
+.tyre-img .tyre-img-item {
+  width: 50%;
+  height: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.tyre-img:hover {
+  background-color: #fee140;
+  background-image: linear-gradient(90deg, #fee140 0%, #fa709a 100%);
+}
+
+.tyre-img:hover .tyre-img-item{
+    transform: scale(.9);
+    border-radius: 50%;
+}
+
+.tyres h2,h3{
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  .what-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  @media (max-width: 884px) {
+    .nav-button {
+      display: block;
+    }
+  
+    nav {
+      display: none;
+    }
+  }
+  
+  
+  @media (max-width: 773px) {
+    .nav-button {
+      display: block;
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    .toggle {
+      display: flex;
+      position: fixed;
+      right: 0;
+      flex-direction: column;
+      top: 70px;
+      background-color: var(--gray);
+      padding: 20px;
+      border-radius: 10px;
+      color: var(--black);
+      z-index: 10000;
+    }
+  
+    #hero{
+      
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .hero-inner{
+      backdrop-filter: blur(20px);
+    }
+  
+    #img-section{
+      flex-direction: column;
+      gap: 70px;
+      align-items: center;
+    }
+  
+  }
+  
+  
+  
+  @media (max-width: 1000px) {
+    .footer-area {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 50px;
+      column-gap: 50px;
+    }
+  
+    .footer-links {
+      align-items: center;
+    }
+  
+    .field input {
+      max-width: 80px;
+    }
+  
+    .service-card-sec{
+      grid-template-columns: 1fr;
+      text-align: center;
+      max-width: 50%;
+      justify-content: center;
+      
+      margin: 0 auto;
+      gap: 80px;
+    }
+  
+    .window{
+      width: 30%;
+    }
+  
+  
+  
+  }
+  
+  
+  @media (max-width: 560px) {
+    .service-header-sec{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-header-sec button{
+      max-width: fit-content;
+    }
+  
+  }
+  
+  
+  
+  
+  @media (max-width: 1190px) {
+    #img-section{
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(1,1fr);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .images{
+      width: 60%;
+    }
+  
+    .window{
+      width: 50%;
+    }
+  
+  }
+}
